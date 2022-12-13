@@ -274,3 +274,65 @@ li:hover > button svg {
   right: 0;
   margin: auto;
 }
+
+/* ============================= */
+.demo-tags {
+  margin: 1em 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.demo-tags li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  margin: 0 1em 0.6em 0;
+}
+
+.stage1 .demo-tags a {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 18px 20px;
+}
+
+.stage2 .demo-tags a:after {
+  content: "";
+  float: right;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-left: 30px solid var(--secondary-color);
+  border-bottom: 30px solid transparent;
+}
+
+/* ==================== */
+.nav.nav-bg-white {
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  height: 5rem;
+}
+
+.nav.nav-bg-white button,
+.nav.nav-bg-white ul .faq {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.nav.nav-bg-white .consultation-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}

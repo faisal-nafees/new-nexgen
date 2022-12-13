@@ -10,7 +10,7 @@
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
-  centeredSlides: 'true',
+  centeredSlides: "true",
   fade: "true",
   autoplay: {
     delay: 4000,
@@ -83,5 +83,21 @@ $(window).on("scroll", function () {
 //   plugins: [require("@tailwindcss/forms")],
 // };
 
+document.addEventListener("DOMContentLoaded", function () {
+  var navItem1 = document.querySelector(".nav-item1");
+  var navItem2 = document.querySelector(".nav-item2");
+  var nav = document.querySelector(".nav");
 
-  
+  navItem1.addEventListener("mouseenter", function (e) {
+    nav.classList.add("nav-bg-white");
+  });
+  navItem2.addEventListener("mouseenter", function (e) {
+    nav.classList.add("nav-bg-white");
+  });
+  navItem1.addEventListener("mouseleave", function () {
+    nav.classList.remove("nav-bg-white");
+  });
+  navItem2.addEventListener("mouseleave", function () {
+    nav.classList.remove("nav-bg-white");
+  });
+});
