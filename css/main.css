@@ -336,3 +336,10 @@ li:hover > button svg {
 html {
   scroll-behavior: smooth;
 }
+
+#website,
+#web-app,
+#mobile-app,
+#ecommerce {
+  scroll-margin-top: 75px;
+}
