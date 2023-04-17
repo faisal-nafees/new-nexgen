@@ -6,25 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Swiper CSS -->
+    <!--============== Swiper CSS ==============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <!--============== CSS ==============-->
+    <link href="../dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/main.css" />
-
-    <!-- Scroll JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../image/favicon.png" />
 
-    <title>Nexgen Enablers/title>
-
+    <title>NexGen Enablers</title>
 </head>
 
 <body class="overflow-x-hidden w-screen">
-    <!-- navbar goes here -->
+    <div id="loader" class="center"></div>
+
+    <!--============== navbar goes here ==============-->
     <header class="bg-white fixed top-0 z-50 w-screen shadow-lg">
         <nav class="relative">
             <div class="max-w-7xl mx-auto px-4 md:px-8">
@@ -280,8 +281,7 @@
                             <!--============== Website Logo ==============-->
                             <a href="../index.html"
                                 class="flex items-center lg:items-center lg:justify-center mb-0 md:mb-0">
-                                <img src="../image/logo.png" alt="logo"
-                                    class="lg:h-24 lg:w-24 h-20 w-20 z-10 logo" />
+                                <img src="../image/logo.png" alt="logo" class="lg:h-24 lg:w-24 h-20 w-20 z-10 logo" />
                             </a>
                         </div>
                     </div>
@@ -1083,146 +1083,262 @@
         </nav>
     </header>
 
-    <section class="bg-cover h-[80vh] lg:h-[90vh] w-screen shapedividers_com-4081"
-        style="background-image: url(../image/Cyber_Security1.jpg);">
-        <div
-            class="flex flex-col lg:mx-auto text-white lg:w-[28rem] lg:ml-28 pt-32 lg:pt-24 xl:pt-40 mx-8 text-center lg:text-left">
-            <h1 class="text-5xl lg:text-7xl lg:leading-[5.5rem] mb-8">Branding As A Solution</h1>
-            <p>Work with us to elevate your online presence and dominate your market.</p>
-            <div class="lg:text-base mt-12 font-bold text-white uppercase">
-                <a href="contactus.html"
-                    class="bg-[#1C434C] p-4 rounded-lg hover:bg-[#fcae04] hover:text-[#1C434C]">Free
-                    Consultation</a>
+    <!--================== SUCCESS STORY ==============-->
+
+    <section class="pb-10 md:pt-20 pt-4">
+        <div class="flex flex-col items-center my-20 md:mt-0 mx-8">
+            <div
+                class="mx-auto text-center text-2xl md:text-3xl text-primaryColor mb-3 font-bold pt-2 md:pt-10 uppercase">
+                SUCCESS STORY
+            </div>
+            <div class="mx-auto text-center w-32 border-solid border-b-4 border-secondaryColor h-1"></div>
+        </div>
+        <div class="container flex mx-auto  items-center">
+            <div class="w-1/3 text-center ">
+                <h1 class=" text-xl font-bold pb-5 text-secondaryColor">9000+</h1>
+                <p>Inrease in just 2 months</p>
+            </div>
+
+            <div class="border-l-2 border-r-2 w-1/3 text-center">
+                <h1 class="text-xl font-bold pb-5 text-secondaryColor">9000+</h1>
+                <p>Inrease in just 2 months</p>
+            </div>
+            <div class="w-1/3 text-center">
+                <h1 class="text-xl font-bold pb-5 text-secondaryColor">9000+</h1>
+                <p>Inrease in just 2 months</p>
             </div>
         </div>
 
     </section>
 
-    <!-- component -->
-    <section>
-        <div class="bg-[#1C434C] text-white px-16 py-8 lg:py-8">
-            <div class="container mx-auto flex flex-col md:flex-row items-center lg:my-12 ">
-                <div class="flex flex-col w-full lg:w-[48%] justify-center items-start md:mr-20 lg:mr-0">
+    <!-- ========about====== -->
 
-                    <p class="lg:text-3xl md:text-base text-white mb-4">“I cannot thank the NEXGEN team enough for all
-                        of
-                        their time and talent. Their enthusiasm for the project and our company has been priceless."
-                    </p>
-                    <p class="mb-8">
-                        Kelly, English Rabbit, Owner
-                    </p>
-                    <a href="#"
-                        class="bg-transparent hover:bg-[#fcae04] text-[#fcae04] hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-[#fcae04] hover:border-transparent">
-                        Explore Now</a>
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-10 lg:grid-cols-2">
+            <div class="lg:pr-10">
+                <a href="/" aria-label="Go Home" title="Logo" class="inline-block mb-5">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                        <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                        </svg>
+                    </div>
+                </a>
+                <h5 class="mb-4 text-4xl font-extrabold text-secondaryColor leading-none">
+                    Business Name
+                    <span class="inline-block text-deep-purple-accent-400"></span>
+                </h5>
+                <h5 class="mb-4 text-xl font-extrabold leading-none">
+                    Business tagline
+
+                </h5>
+                <p class="mb-6 text-gray-900">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam,
+                    eaque ipsa quae
+                </p>
+                <!-- <p class="mb-6 text-gray-900">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam
+                    rem aperiam, eaque ipsa quae explicabo. Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
+                    totam rem aperiam, eaque
+                    ipsa quae explicabo.
+                </p> -->
+                <hr class="mb-5 border-gray-300" />
+
+            </div>
+            <div>
+                <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                    src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- ========about====== -->
+
+
+    <!--     -->
+    <section class=" bg-[#222222]">
+
+
+        <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-20 ">
+            <div class="flex flex-col items-center my-20 md:mt-0 mx-8">
+                <div class="mx-auto text-center text-2xl md:text-3xl text-white mb-3 font-bold pt-2 uppercase">
+                    Challenges
                 </div>
-                <div class="p-8  mb-6 md:mb-0 ml-0 lg:w-2/3  justify-center">
-                    <div class="h-48 flex flex-wrap content-center lg:gap-12">
-                        <div>
-                            <img class="mt-28 hidden h-[17rem] w-40 rotate-[-25deg] rounded-[5rem] xl:block"
-                                src="../image/3.jpg">
-                        </div>
-                        <div>
-                            <img class="inline-block mt-16 md:mt-0 h-[17rem] w-36 md:w-56 lg:w-48 md:h-72 lg:h-[24rem] rotate-[-25deg] rounded-full"
-                                src="../image/1.jpg">
-                        </div>
-                        <div>
-                            <img class="mt-8 hidden lg:h-64 lg:w-40 rounded-[5rem] rotate-[-25deg] lg:block"
-                                src="../image/2.jpg">
+                <div class="mx-auto text-center w-32 border-solid border-b-4 border-secondaryColor h-1"></div>
+            </div>
+            <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="p-5 duration-300 text-white transform border rounded shadow-sm hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+                        (01)
+                    </div>
+                    <h6 class="mb-2 font-semibold text-xl leading-5">Challenge</h6>
+                    <p class="text-sm text-gray-900">
+                        Pellentesque aliquet nibh nec urna. In nisi neque, aliquet. Sed pretium, ligulasollicitudin
+                        laoreet viverra, tortor
+                        libero sodales leo, eget blandit nunc tortor eu nibh.
+                    </p>
+                </div>
+                <div class="p-5 duration-300 transform text-white border rounded shadow-sm hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+                        (02)
+                    </div>
+                    <h6 class="mb-2 font-semibold text-xl leading-5">Challenge</h6>
+                    <p class="text-sm text-gray-900">
+                        Pellentesque aliquet nibh nec urna. In nisi neque, aliquet. Sed pretium, ligulasollicitudin
+                        laoreet viverra, tortor
+                        libero sodales leo, eget blandit nunc tortor eu nibh.
+                    </p>
+                </div>
+                <div class="p-5 duration-300 transform text-white border rounded shadow-sm hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+                        (03)
+                    </div>
+                    <h6 class="mb-2 font-semibold leading-5 text-xl">Challenge</h6>
+                    <p class="text-sm text-gray-900">
+                        Pellentesque aliquet nibh nec urna. In nisi neque, aliquet. Sed pretium, ligulasollicitudin
+                        laoreet viverra, tortor
+                        libero sodales leo, eget blandit nunc tortor eu nibh.
+                    </p>
+                </div>
+
+            </div>
+            <div class="text-center ">
+                <a href="contactus.html">
+                    <button type="button"
+                        class="inline-block px-7 coolBeans py-3 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="light">
+                        Our Services
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--     -->
+
+
+
+
+
+    <!-- ====   ==== -->
+
+
+    <section class="pb-10  pt-4">
+        <div class="flex flex-col items-center my-20 md:mt-0 mx-8">
+            <div
+                class="mx-auto text-center text-2xl md:text-3xl text-primaryColor mb-3 font-bold pt-2 md:pt-10 uppercase">
+                Results
+            </div>
+            <div class="mx-auto text-center w-32 border-solid border-b-4 border-secondaryColor h-1"></div>
+        </div>
+        <div class="container flex mx-auto  items-center">
+            <div class="w-1/3 text-center ">
+                <h1 class=" text-xl font-bold pb-5 text-secondaryColor">9000+</h1>
+                <p>Inrease in just 2 months</p>
+            </div>
+
+            <div class="border-l-2 border-r-2 w-1/3 text-center">
+                <h1 class="text-xl font-bold pb-5 text-secondaryColor">9000+</h1>
+                <p>Inrease in just 2 months</p>
+            </div>
+            <div class="w-1/3 text-center">
+                <h1 class="text-xl font-bold pb-5 text-secondaryColor">9000+</h1>
+                <p>Inrease in just 2 months</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Container for demo purpose -->
+    <div>
+
+        <!-- Section: Design Block -->
+        <section class="p-16  ">
+            <div class="relative overflow-hidden bg-no-repeat bg-cover  rounded-3xl" style="
+            background-position: 50%;
+            background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp');
+            height: 500px;
+          ">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                    style="background-color: rgba(0, 0, 0, 0.75)">
+                    <div class="flex justify-center items-center h-full">
+                        <div class="text-center text-white px-6 md:px-12">
+                            <h1 class="text-3xl md:text-5xl xl:text-5xl font-bold tracking-tight my-8">
+                                Do You Want To Boost Your Business?
+                            </h1>
+                            <p class="p-5">
+                                Treat your business like a baby nurture & spend time to build more meaningful
+                                relationship, we are here to systemize
+                                operation & scale your business writer accurate predictability
+                            </p>
+                            <a href="contactus.html">
+                                <button type="button"
+                                    class="inline-block px-7 coolBeans py-3 border-2 border-white font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                                    data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                    Our Services
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- Section: Design Block -->
+
+    </div>
+    <!-- Container for demo purpose -->
+    <!-- ====   ==== -->
+
+    <!-- ========Consultation====== -->
+
+    <section class="w-screen bg-darkGray py-6 md:py-10">
+        <div
+            class="lg:w-[70vw] lg:mx-auto mx-10 lg:h-[70vh] flex justify-center text-white items-center flex-col text-center">
+            <h1 class="md:text-7xl font-bold text-4xl">
+                Ready to Grow Your Business Online?
+            </h1>
+
+            <p class="text-center mx-4 md:mx-0 py-8 text-base">
+                Let's connect and discuss your current needs and our offerings. Book a
+                free consultation.
+            </p>
+
+            <div class="overflow-hidden py-4 rounded-lg bg-primaryColor">
+                <a class="coolBeans overflow-hidden rounded-lg px-8 py-4 uppercase lg:text-xl font-bold text-white"
+                    href="contactus.html">free consultation</a>
+            </div>
         </div>
     </section>
-
-    <section class="shapedividers_com-3155">
-        <div class="flex flex-col md:flex-row gap-4 mx-8 mt-24 pt-12 md:pt-0">
-
-            <div
-                class="md:w-1/2 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="rounded-t-lg" src="../image/cyber-security.jpg" alt="">
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                            technology acquisitions 2021</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                        technology
-                        acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#"
-                        class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-[#1C434C] rounded-lg hover:bg-[#fcae04] hover:text-[#1C434C] focus:outline-none">
-                        Read more
-                        <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-
-            <div
-                class="md:w-1/2 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="rounded-t-lg" src="../image/cyber-security.jpg" alt="">
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                            technology acquisitions 2021</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                        technology
-                        acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#"
-                        class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-[#1C434C] rounded-lg hover:bg-[#fcae04] hover:text-[#1C434C] focus:outline-none">
-                        Read more
-                        <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ========Footer====== -->
-    <footer class="relative bg-[#1c434c] pb-8 pt-24 w-screen shapedividers_com-3813">
-
-        <div class="flex flex-col md:flex-row md:space-x-10 ml-6 text-white">
+    <!-- ======================Footer==================== -->
+    <footer class="relative bg-primaryColor pb-8 pt-12 w-screen">
+        <div class="flex flex-col md:flex-row md:space-x-10 mx-6 text-white">
             <div class="flex flex-col w-full">
-                <h2 class="mb-4 text-sm">OUR COMPETENTIES</h2>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
+                <h2 class="mb-4 text-sm uppercase">Our Competenties</h2>
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
                     href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-3 h-3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
                     <span>Major Server 1</span>
                 </a>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
                     href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-3 h-3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
                     <span>Major Server 2</span>
                 </a>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
                     href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-3 h-3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
                     <span>Major Server 3</span>
                 </a>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
                     href="">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-3 h-3">
@@ -1230,41 +1346,40 @@
                     </svg>
                     <span>Major Server 4</span>
                 </a>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
                     href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-3 h-3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
                     <span>Major Server 5</span>
                 </a>
-
             </div>
             <div class="flex flex-col w-full">
-                <h2 class="mb-4 mt-12 md:mt-0 text-sm">WORKING AT QUINTOR</h2>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
-                    href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-3 h-3">
+                <h2 class="mb-4 mt-12 md:mt-0 text-sm uppercase">Quick links</h2>
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
+                    href="#blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
-                    <span>Young Professional</span></a>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
-                    href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-3 h-3">
+                    <span>Blog</span></a>
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
+                    href="#career"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
-                    <span>Vacancies</span></a>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
-                    href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-3 h-3">
+                    <span>Career</span></a>
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
+                    href="#case-studies"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
-                    <span>Student</span></a>
-                <a class="flex hover:text-[#fcae04] items-center border-b border-solid border-white py-2  text-xs md:text-base"
-                    href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-3 h-3">
+                    <span>Case Studies</span></a>
+                <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
+                    href="#terms-privacy"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
-                    <span>Graduation assignments</span></a>
+                    <span>Terms & Privacy</span></a>
             </div>
             <div class="flex flex-col w-full">
                 <div>
@@ -1279,59 +1394,228 @@
                         Havensingel 1 5211 TX Den Bosch +31 73 203 4067
                     </p>
                 </div>
-
             </div>
             <div class="flex flex-col w-full">
                 <div>
                     <h2 class="mb-4 mt-12 md:mt-0 text-sm">QUINTOR DEVENTER</h2>
-                    <p class="w-1/2 text-xs md:text-sm">Zutphenseweg 23 7418 AG Deventer</p>
+                    <p class="w-1/2 text-xs md:text-sm">
+                        Zutphenseweg 23 7418 AG Deventer
+                    </p>
                 </div>
                 <div class="mb-8">
                     <h2 class="py-5 text-sm mt-5 md:mt-10">QUINTOR DEVENTER</h2>
-                    <p class="w-1/2 text-xs md:text-sm">Zutphenseweg 23 7418 AG Deventer</p>
+                    <p class="w-1/2 text-xs md:text-sm">
+                        Zutphenseweg 23 7418 AG Deventer
+                    </p>
                 </div>
                 <div
-                    class="absolute md:static top-[68px] right-[14px] flex justify-center w-20 h-20 bg-white rounded-full">
-                    <a href="../index.php">
-                        <img src="../image/logo.png" alt="logo" class="w">
+                    class="absolute md:static top-[16px] right-[14px] flex justify-center w-20 h-20 bg-white rounded-full">
+                    <a href="../index.html">
+                        <img src="../image/logo1.jpg" alt="logo" class="w" />
                     </a>
                 </div>
             </div>
         </div>
 
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr class="my-6 border-lightGray sm:mx-auto lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-evenly ml-6">
-            <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/"
-                    class="hover:underline">Nexgen™</a>. All Rights Reserved.
+            <span class="text-sm text-white sm:text-center dark:text-lightGray">© 2022
+                <a href="https://flowbite.com/" class="hover:underline">NexGen Enablers Inc. </a>. All Rights Reserved.
             </span>
             <div class="flex mt-4 gap-3 md:space-x-6 sm:justify-center sm:mt-0">
-                <a href="#" class="text-white hover:text-[#fcae04] dark:hover:text-white">
+                <a href="#" class="text-white hover:text-secondaryColor dark:hover:text-white">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd"
-                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                            clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M22
+                                                                12c0-5.523-4.477-10-10-10S2
+                                                                6.477 2 12c0
+                                                                4.991 3.657
+                                                                9.128 8.438
+                                                                9.878v-6.987h-2.54V12h2.54V9.797c0-2.506
+                                                                1.492-3.89
+                                                                3.777-3.89
+                                                                1.094 0
+                                                                2.238.195
+                                                                2.238.195v2.46h-1.26c-1.243
+                                                                0-1.63.771-1.63
+                                                                1.562V12h2.773l-.443
+                                                                2.89h-2.33v6.988C18.343
+                                                                21.128 22
+                                                                16.991 22
+                                                                12z" clip-rule="evenodd" />
                     </svg>
                     <span class="sr-only">Facebook page</span>
                 </a>
-                <a href="#" class="text-white hover:text-[#fcae04] dark:hover:text-white">
+                <a href="#" class="text-white hover:text-secondaryColor dark:hover:text-white">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd"
-                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                            clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M12.315
+                                                                    2c2.43 0
+                                                                    2.784.013
+                                                                    3.808.06
+                                                                    1.064.049
+                                                                    1.791.218
+                                                                    2.427.465a4.902
+                                                                    4.902 0
+                                                                    011.772
+                                                                    1.153
+                                                                    4.902
+                                                                    4.902 0
+                                                                    011.153
+                                                                    1.772c.247.636.416
+                                                                    1.363.465
+                                                                    2.427.048
+                                                                    1.067.06
+                                                                    1.407.06
+                                                                    4.123v.08c0
+                                                                    2.643-.012
+                                                                    2.987-.06
+                                                                    4.043-.049
+                                                                    1.064-.218
+                                                                    1.791-.465
+                                                                    2.427a4.902
+                                                                    4.902 0
+                                                                    01-1.153
+                                                                    1.772
+                                                                    4.902
+                                                                    4.902 0
+                                                                    01-1.772
+                                                                    1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643
+                                                                    0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902
+                                                                    4.902 0
+                                                                    01-1.772-1.153
+                                                                    4.902
+                                                                    4.902 0
+                                                                    01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902
+                                                                    4.902 0
+                                                                    011.153-1.772A4.902
+                                                                    4.902 0
+                                                                    015.45
+                                                                    2.525c.636-.247
+                                                                    1.363-.416
+                                                                    2.427-.465C8.901
+                                                                    2.013
+                                                                    9.256 2
+                                                                    11.685
+                                                                    2h.63zm-.081
+                                                                    1.802h-.468c-2.456
+                                                                    0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748
+                                                                    1.15-.137.353-.3.882-.344
+                                                                    1.857-.047
+                                                                    1.023-.058
+                                                                    1.351-.058
+                                                                    3.807v.468c0
+                                                                    2.456.011
+                                                                    2.784.058
+                                                                    3.807.045.975.207
+                                                                    1.504.344
+                                                                    1.857.182.466.399.8.748
+                                                                    1.15.35.35.683.566
+                                                                    1.15.748.353.137.882.3
+                                                                    1.857.344
+                                                                    1.054.048
+                                                                    1.37.058
+                                                                    4.041.058h.08c2.597
+                                                                    0
+                                                                    2.917-.01
+                                                                    3.96-.058.976-.045
+                                                                    1.505-.207
+                                                                    1.858-.344.466-.182.8-.398
+                                                                    1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097
+                                                                    3.097 0
+                                                                    00-.748-1.15
+                                                                    3.098
+                                                                    3.098 0
+                                                                    00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12
+                                                                    6.865a5.135
+                                                                    5.135 0
+                                                                    110
+                                                                    10.27
+                                                                    5.135
+                                                                    5.135 0
+                                                                    010-10.27zm0
+                                                                    1.802a3.333
+                                                                    3.333 0
+                                                                    100
+                                                                    6.666
+                                                                    3.333
+                                                                    3.333 0
+                                                                    000-6.666zm5.338-3.205a1.2
+                                                                    1.2 0
+                                                                    110 2.4
+                                                                    1.2 1.2
+                                                                    0
+                                                                    010-2.4z" clip-rule="evenodd" />
                     </svg>
                     <span class="sr-only">Instagram page</span>
                 </a>
-                <a href="#" class="text-white hover:text-[#fcae04] dark:hover:text-white">
+                <a href="#" class="text-white hover:text-secondaryColor dark:hover:text-white">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        <path d="M8.29
+                                                                        20.251c7.547
+                                                                        0
+                                                                        11.675-6.253
+                                                                        11.675-11.675
+                                                                        0-.178
+                                                                        0-.355-.012-.53A8.348
+                                                                        8.348
+                                                                        0
+                                                                        0022
+                                                                        5.92a8.19
+                                                                        8.19
+                                                                        0
+                                                                        01-2.357.646
+                                                                        4.118
+                                                                        4.118
+                                                                        0
+                                                                        001.804-2.27
+                                                                        8.224
+                                                                        8.224
+                                                                        0
+                                                                        01-2.605.996
+                                                                        4.107
+                                                                        4.107
+                                                                        0
+                                                                        00-6.993
+                                                                        3.743
+                                                                        11.65
+                                                                        11.65
+                                                                        0
+                                                                        01-8.457-4.287
+                                                                        4.106
+                                                                        4.106
+                                                                        0
+                                                                        001.27
+                                                                        5.477A4.072
+                                                                        4.072
+                                                                        0
+                                                                        012.8
+                                                                        9.713v.052a4.105
+                                                                        4.105
+                                                                        0
+                                                                        003.292
+                                                                        4.022
+                                                                        4.095
+                                                                        4.095
+                                                                        0
+                                                                        01-1.853.07
+                                                                        4.108
+                                                                        4.108
+                                                                        0
+                                                                        003.834
+                                                                        2.85A8.233
+                                                                        8.233
+                                                                        0
+                                                                        012
+                                                                        18.407a11.616
+                                                                        11.616
+                                                                        0
+                                                                        006.29
+                                                                        1.84" />
                     </svg>
                     <span class="sr-only">Twitter page</span>
                 </a>
             </div>
         </div>
     </footer>
-
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -1348,15 +1632,33 @@
         })();
     </script>
 
-    <!-- Swiper JS -->
+    <!--================== Loading ==================-->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("#loader").style.visibility = "visible";
+            } else {
+                document.querySelector("#loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+    <!--================== Toggle Button ==================-->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!--================== Header Dropdown ==================-->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
     <script src="../script/script.js"></script>
-    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-    <!-- <script src="script/swiper-bundle.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
+    <script>
+        $(".question-and-answer").click(function () {
+            $(this).find(".answer").toggleClass("hidden");
+            $(this).find(".question-chevron").toggleClass("hidden");
+        });
+    </script>
 </body>
 
 </html>
