@@ -1100,6 +1100,10 @@ video {
   width: 12rem;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -2626,6 +2630,10 @@ video {
     padding-left: 2rem;
   }
 
+  .md\:pt-64 {
+    padding-top: 16rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -2722,6 +2730,14 @@ video {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .lg\:mb-28 {
+    margin-bottom: 7rem;
   }
 
   .lg\:block {

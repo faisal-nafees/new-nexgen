@@ -827,12 +827,258 @@
               </div>
             </div>
           </li>
+
+
+          <li class="border-b-[1px] border-gray_600">
+            <div class="group inline-block">
+              <div @click.away="open1 = false" x-data="{ open1: false }">
+                <button @click="open1 = !open1"
+                  class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none focus:shadow-outline">
+                  <span class="font-semibold uppercase">How we do</span>
+                  <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open1, 'rotate-0': !open1}"
+                    class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <div x-show="open1" x-transition:enter="transition ease-out duration-100"
+                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter-end="transform opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-75"
+                  x-transition:leave-start="transform opacity-100 scale-100"
+                  x-transition:leave-end="transform opacity-0 scale-95"
+                  class="absolute z-10 left-0 w-screen border-t-2 shadow-lg">
+                  <div class="px-2 pt-2 pb-4 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline w-full"
+                        href="src/navbar/strategy.html">
+                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                      <img src="image/icons8-group-of-projects-50.png" alt="" height="60" width="60" />
+                                    </div> -->
+                        <svg class="w-10 h-10" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 457.042 457.042"
+                          style="enable-background:new 0 0 457.042 457.042;" xml:space="preserve">
+                          <g id="XMLID_227_">
+                            <path id="XMLID_228_" d="M191.913,103V38.914h235.138V208H215.26c-32.157,19.966-29.96,18.705-32.684,20h254.475
+                                                          		c5.522,0,10-4.477,10-10V28.914c0-5.523-4.478-10-10-10H181.913c-5.523,0-10,4.477-10,10V78.75
+                                                          		C171.913,78.75,189.845,88.25,191.913,103z" />
+                            <path id="XMLID_1158_" d="M302.327,130.73l-16.316,12.865l6.597,15.902c1.072,2.584,3.178,4.602,5.807,5.562
+                                                          		c2.627,0.959,5.538,0.775,8.024-0.512l43.31-22.404l43.563,33.956c1.826,1.423,3.991,2.113,6.141,2.113
+                                                          		c2.977,0,5.922-1.323,7.894-3.853c3.396-4.356,2.617-10.639-1.739-14.035l-48.615-37.894c-3.08-2.4-7.272-2.788-10.742-0.995
+                                                          		l-39.337,20.349L302.327,130.73z" />
+                            <path id="XMLID_1159_" d="M281.081,79.517c-1.81-4.363-6.423-6.866-11.069-5.999l-34.074,6.353l-14.634-23.206
+                                                          		c-2.946-4.672-9.122-6.07-13.792-3.125c-4.672,2.946-6.07,9.121-3.125,13.792L222.64,96.28c2.186,3.466,6.261,5.249,10.292,4.497
+                                                          		l30.647-5.714l18.048-14.231L281.081,79.517z" />
+                            <path id="XMLID_1160_" d="M261.774,136.618c0.813,1.309,1.521,2.653,2.148,4.018l44.114-34.784
+                                                          		c4.337-3.419,5.081-9.708,1.661-14.044c-3.42-4.336-9.707-5.082-14.044-1.661l-44.778,35.307
+                                                          		C255.151,128.249,258.903,131.992,261.774,136.618z" />
+                            <path id="XMLID_1161_"
+                              d="M88.886,264.455c0-2.583,2.094-4.677,4.677-4.677c2.583,0,4.677,2.094,4.677,4.677v95.243
+                                                          		c9.206-5.322,19.854-8.4,31.195-8.454c-5.308-8.741-8.367-18.992-8.367-29.944c0-17.674,7.973-33.513,20.501-44.135
+                                                          		c0,0-0.38-12.025-0.392-147.623c0-2.069,1.664-3.754,3.734-3.779c2.069-0.025,3.774,1.62,3.823,3.688c0,0.001,0,0.001,0,0.001
+                                                          		c0.088,17.425,0.277,55.234,0.332,66.027c0.033,6.537,3.597,12.546,9.318,15.709c5.72,3.163,12.705,2.987,18.259-0.462
+                                                          		l63.98-39.724c8.471-5.259,11.074-16.39,5.814-24.861c-5.259-8.47-16.39-11.076-24.861-5.815l-36.565,22.703
+                                                          		c-0.06-11.926-0.107-21.319-0.169-33.758c-0.118-23.419-19.292-42.51-42.725-42.51h-18.119l-13.566,36.108l-9.245,23.976
+                                                          		l5.418-25.519c0.375-1.766,0.103-3.609-0.767-5.191l-7.34-13.35l6.334-12.091c0.452-0.822,0.436-1.822-0.041-2.63
+                                                          		c-0.478-0.808-1.346-1.303-2.285-1.303H84.612c-0.938,0-1.807,0.495-2.285,1.303c-0.478,0.808-0.493,1.808-0.041,2.63l6.705,12.116
+                                                          		l-7.354,13.374c-0.854,1.552-1.132,3.356-0.787,5.094l4.692,25.567l-8.5-23.976L63.12,86.762H45.001
+                                                          		c-23.44,0-42.606,19.07-42.724,42.51L1.611,261.907c-0.05,9.971,7.992,18.094,17.963,18.145c0.031,0,0.062,0,0.093,0
+                                                          		c9.928,0,18.002-8.024,18.052-17.963l0.667-132.636c0.01-1.975,1.617-3.569,3.591-3.564s3.572,1.607,3.572,3.582l0.008,303.475
+                                                          		c0,11.656,9.204,21.157,20.741,21.641l0.203-40.431c0.096-19.147,8.79-36.312,22.385-47.862V264.455z" />
+                            <circle id="XMLID_1165_" cx="93.559" cy="37.417" r="37.417" />
+                            <circle id="XMLID_1167_" cx="363.092" cy="321.715" r="37.866" />
+                            <path id="XMLID_1168_"
+                              d="M455.219,414.671c-0.119-23.721-19.515-43.02-43.237-43.02c-10.17,0-87.895,0-98.086,0
+                                                          		c-22.351,0-40.854,17.134-43.019,38.955c-1.991-22.232-20.794-39.369-43.053-39.369c-10.17,0-87.895,0-98.086,0
+                                                          		c-23.722,0-43.118,19.299-43.237,43.02l-0.215,42.786h36.542l0.214-42.603c0.01-1.946,1.592-3.516,3.537-3.511
+                                                          		c1.945,0.005,3.518,1.584,3.518,3.528v42.585h96.776v-42.688c0-2.112,1.712-3.824,3.824-3.824c2.112,0,3.824,1.712,3.824,3.824
+                                                          		c0,0.028,0,0.057-0.001,0.086l0.214,42.602c26.716,0,46.663,0,72.254,0l0.212-42.188c0.01-1.946,1.592-3.516,3.537-3.511
+                                                          		c1.945,0.005,3.518,1.583,3.518,3.528v42.17h96.776v-41.821c0-2.044,1.605-3.729,3.647-3.828c2.042-0.099,3.805,1.422,4,3.457
+                                                          		c0,0.001,0,0.002,0,0.003l0.212,42.188h36.542L455.219,414.671z" />
+                            <path id="XMLID_1202_"
+                              d="M178.934,283.434c-20.307,0-36.805,15.955-37.817,35.918c-0.614,12.113,4.534,24.048,14.643,31.885h0
+                                                          		c6.406,4.966,14.442,7.93,23.174,7.93c21.51,0,38.924-17.984,37.817-39.815C215.738,299.361,199.211,283.434,178.934,283.434z" />
+                          </g>
+
+                        </svg>
+                        <div class="ml-3 w-[80%]">
+                          <p class="text-sm font-semibold">
+                            Strategy And Assessment
+                          </p>
+                          <p class="text-xs pt-2 text-gray_600">
+                            We build websites that convert your visitors into
+                            loyal customers who put trust on you & pay you.
+                          </p>
+                        </div>
+                      </a>
+
+                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline w-full"
+                        href="src/navbar/implementation.html">
+                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                      <img src="image/icons8-design-50.png" alt="" height="60" width="60" />
+                                    </div> -->
+                        <svg class="w-10 h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                          style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path
+                                d="M487.011,25.004C470.9,8.88,449.467,0.002,426.667,0.002c-22.789,0-44.222,8.878-60.333,24.995L356.27,35.061
+                                                          			l120.666,120.667L487,145.664c16.122-16.117,25-37.544,25-60.333C512,62.537,503.122,41.109,487.011,25.004z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M32.333,369.523L3.245,488.108c-1.422,5.795,0.289,11.917,4.511,16.134c3.232,3.239,7.599,5,12.066,5
+                                                          			c1.355,0,2.723-0.162,4.066-0.489l118.584-29.088L32.333,369.523z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+
+                              <rect x="89.549" y="262.063"
+                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -125.028 290.5388)" width="397.297"
+                                height="68.257" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+
+                              <rect x="17.145" y="189.667"
+                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -95.0437 218.1378)" width="397.297"
+                                height="68.259" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M197.467,82.664l-43.266,43.265c-3.334,3.334-7.701,5-12.066,5c-4.366,0-8.734-1.667-12.066-5
+                                                          			c-6.666-6.666-6.666-17.472,0-24.133l43.266-43.265l-47.668-47.667c-6.666-6.666-17.467-6.666-24.133,0L5.001,107.397
+                                                          			c-6.667,6.662-6.667,17.473,0,24.133l103.264,103.264l120.667-120.667L197.467,82.664z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M501.132,386.33l-47.665-47.666l-43.266,43.266c-3.334,3.334-7.701,5-12.066,5s-8.734-1.667-12.066-5
+                                                          			c-6.666-6.666-6.666-17.472,0-24.133l43.266-43.266l-31.466-31.466L277.203,403.734l103.264,103.264
+                                                          			c3.334,3.334,7.701,5.001,12.066,5.001c4.366,0,8.734-1.667,12.066-5.001l96.534-96.534
+                                                          			C507.798,403.803,507.798,392.992,501.132,386.33z" />
+                            </g>
+                          </g>
+                        </svg>
+                        <div class="ml-3 w-[80%]">
+                          <p class="text-sm font-semibold">
+                            Design And Implementation
+                          </p>
+                          <p class="text-xs pt-2 text-gray_600">
+                            Post strategic assessments, In our second phase,
+                            we strive towards designing & implementing the
+                            right solutions for your business.
+                          </p>
+                        </div>
+                      </a>
+
+                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline w-full"
+                        href="src/navbar/innovation.html">
+                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                      <img src="image/icons8-innovation-50.png" alt="" height="100" width="100" />
+                                    </div> -->
+                        <svg class="w-10 h-10" version="1.1" id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                          xmlns:cc="http://creativecommons.org/ns#"
+                          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="idea.svg"
+                          inkscape:version="0.48.4 r9939" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="1200px"
+                          viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                          <sodipodi:namedview inkscape:cy="448" inkscape:cx="-67.796606" inkscape:zoom="0.26339286"
+                            showgrid="false" id="namedview3101" guidetolerance="10" gridtolerance="10"
+                            objecttolerance="10" borderopacity="1" bordercolor="#666666" pagecolor="#ffffff"
+                            inkscape:current-layer="svg2" inkscape:window-maximized="1" inkscape:window-y="24"
+                            inkscape:window-height="876" inkscape:window-width="1535" inkscape:pageshadow="2"
+                            inkscape:pageopacity="0" inkscape:window-x="65">
+                          </sodipodi:namedview>
+                          <path id="rect2989-0" inkscape:connector-curvature="0" d="M567.663,0v190.423h64.679V0h-64.685H567.663z M303.553,57.225
+                                                          	l-52.992,37.103l109.203,155.946l52.963-37.104L303.553,57.225z M896.439,57.225L787.268,213.171l52.971,37.104L949.44,94.328
+                                                          	l-52.992-37.103H896.439z M599.989,242.524c-158.227,0-286.493,96.083-286.493,214.625l162.772,492.948h247.47l162.758-492.948
+                                                          	c0-118.54-128.258-214.625-286.492-214.625H599.989z M85.465,299.673l-22.099,60.814l178.849,65.114l22.181-60.785L85.461,299.673
+                                                          	H85.465z M1114.527,299.673l-178.936,65.148l22.106,60.792l178.936-65.125L1114.527,299.673z M255.756,577.681L71.856,627.007
+                                                          	l16.686,62.431l183.9-49.255l-16.683-62.502H255.756z M944.236,577.681l-16.674,62.501l183.9,49.247l16.674-62.432l-183.9-49.318
+                                                          	V577.681z M472.66,986.032v85.686h254.687v-85.673H472.661L472.66,986.032z M472.66,1114.314V1200h254.687v-85.672H472.661
+                                                          	L472.66,1114.314z" />
+                        </svg>
+                        <div class="ml-3 w-[80%]">
+                          <p class="text-sm font-semibold">
+                            Innovation And Managed Solution
+                          </p>
+                          <p class="text-xs pt-2 text-gray_600">
+                            Now that we have assessed your environment, its
+                            vulnerabilities and implemented appropriate
+                            solutions, it's high time now for us to chalk out
+                            strategies towards continuous service improvements
+                            & introduce innovations by providing managed
+                            solutions.
+                          </p>
+                        </div>
+                      </a>
+                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline w-full"
+                        href="src/navbar/growth.html">
+                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                      <img src="image/icons8-innovation-50.png" alt="" height="100" width="100" />
+                                    </div> -->
+                        <svg class="w-10 h-10" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 462.8 462.8"
+                          style="enable-background:new 0 0 462.8 462.8;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path
+                                d="M59.3,273.225H10.5c-5.8,0-10.5,4.7-10.5,10.5v20.3v89.1v20.3c0,5.8,4.7,10.5,10.5,10.5h48.8c5.8,0,10.5-4.7,10.5-10.5
+                                                          			v-20.3v-89.1v-20.3C69.8,277.925,65.1,273.225,59.3,273.225z" />
+                              <path
+                                d="M157.9,214.925h-48.8c-5.8,0-10.5,4.7-10.5,10.5v78.6v30.8v78.6c0,5.8,4.7,10.5,10.5,10.5h48.8c5.8,0,10.5-4.7,10.5-10.5
+                                                          			v-78.6v-30.8v-78.6C168.4,219.625,163.7,214.925,157.9,214.925z" />
+                              <path d="M267,246.025v-86.8h33.7c6.2,0,10-6.8,6.7-12.1l-68.6-110.2c-3.1-5-10.4-5-13.5,0l-68.6,110.2c-3.3,5.3,0.5,12.1,6.7,12.1
+                                                          			h33.7v254.2c0,5.8,4.7,10.5,10.5,10.5h48.8c5.8,0,10.5-4.7,10.5-10.4c-19.6-22.4-31.5-51.7-31.5-83.8
+                                                          			C235.4,297.725,247.3,268.425,267,246.025z" />
+                              <path d="M362.9,229.825c-55.2,0-99.9,44.7-99.9,99.9s44.7,99.9,99.9,99.9s99.9-44.7,99.9-99.9S418.1,229.825,362.9,229.825z
+                                                          			 M391.6,369.225c-4.4,5.3-10,8.9-16.7,10.7c-2.9,0.8-4.2,2.3-4,5.3c0.1,2.9,0,5.9,0,8.9c0,2.6-1.3,4-3.9,4.1
+                                                          			c-3.2,0.1-6.4,0.1-9.5,0c-2.8-0.1-4.1-1.6-4.1-4.3c0-2.2,0-4.3-0.1-6.5c0-4.8-0.2-5-4.8-5.7c-5.9-0.9-11.6-2.3-17-4.9
+                                                          			c-4.2-2-4.6-3.1-3.4-7.5c0.9-3.3,1.8-6.6,2.8-9.8c1.2-3.8,2.2-4.2,5.7-2.4c5.9,3.1,12.2,4.8,18.8,5.6c4.3,0.5,8.4,0.1,12.3-1.6
+                                                          			c7.3-3.2,8.5-11.7,2.3-16.8c-2.1-1.7-4.5-3-7-4.1c-6.4-2.8-13.2-5-19.2-8.6c-9.9-5.9-16.1-14-15.4-26c0.8-13.6,8.5-22.1,21-26.6
+                                                          			c5.1-1.9,5.2-1.8,5.2-7.2c0-1.8,0-3.6,0-5.4c0.1-4.1,0.8-4.7,4.8-4.9c1.2,0,2.5,0,3.7,0c8.6,0,8.6,0,8.6,8.6c0,6.1,0,6.1,6.1,7
+                                                          			c4.6,0.7,9.1,2.1,13.3,4c2.4,1,3.3,2.7,2.5,5.2c-1.1,3.7-2.1,7.4-3.3,11.1c-1.1,3.5-2.2,4-5.6,2.4c-6.7-3.2-13.7-4.6-21.1-4.2
+                                                          			c-1.9,0.1-3.8,0.4-5.6,1.2c-6.4,2.8-7.4,9.9-2,14.2c2.8,2.2,5.9,3.8,9.2,5.2c5.7,2.3,11.4,4.6,16.7,7.6
+                                                          			C399,333.025,403.6,354.525,391.6,369.225z" />
+                            </g>
+                          </g>
+                        </svg>
+                        <div class="ml-3 w-[80%]">
+                          <p class="text-sm font-semibold">
+                            Growth Hacking solutions
+                          </p>
+                          <p class="text-xs pt-2 text-gray_600">
+                            Growth hacking is an umbrella term for strategies focused solely on growth. It is usually
+                            used
+                            in relation to early-stage startups who need massive growth in a short time on small
+                            budgets.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
           <li class="border-b-[1px] border-gray_600">
             <div class="group inline-block">
               <div @click.away="open = false" x-data="{ open: false }">
                 <button @click="open = !open"
                   class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none focus:shadow-outline">
-                  <span class="font-semibold uppercase">what we do</span>
+                  <span class="font-semibold uppercase">who we Help</span>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                     class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
                     <path fill-rule="evenodd"
@@ -849,144 +1095,107 @@
                   class="absolute z-10 left-0 w-screen border-t-2 shadow-lg">
                   <div class="px-2 pt-2 pb-4 bg-white">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline w-full"
-                        href="src/navbar/buildbrand.html">
-                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                          <img src="image/icons8-laptop-coding-50.png" alt="" height="80" width="80" />
-                        </div> -->
-                        <svg class="w-10 h-10" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.596px" height="31.596px"
-                          viewBox="0 0 31.596 31.596" style="enable-background:new 0 0 31.596 31.596;"
-                          xml:space="preserve">
-                          <g>
-                            <path d="M29.354,2.942H2.241v20.195h27.113V2.942z M26.311,20.092H5.285V5.986h21.025V20.092L26.311,20.092z M31.596,24.977v3.677
-                        		H0v-3.677h12.097v1.838h7.401v-1.838H31.596z M11.627,16.168l-3.171-3.17l3.115-3.114l1.175,1.175l-1.939,1.939l1.995,1.995
-                        		L11.627,16.168z M15.003,17.492l-1.525-0.657l3.565-8.275l1.525,0.657L15.003,17.492z M18.793,14.993l1.995-1.995l-1.938-1.939
-                        		l1.174-1.175l3.115,3.114l-3.17,3.17L18.793,14.993z" />
-                          </g>
-                        </svg>
-                        <div class="ml-3 w-[80%]">
-                          <p class="text-sm font-semibold">We Build Brand</p>
-                          <p class="text-xs pt-2 text-gray_600">
-                            We know what it takes to craft a brand from
-                            ideation to strategy to implementation. Right from
-                            choosing a Logo design to building an identity
-                            online and nurturing them to succeed, scale &
-                            thrive leveraging right technology focused on your
-                            success.
-                          </p>
-                        </div>
-                      </a>
-
-                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline w-full"
-                        href="src/navbar/automation.html">
-                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                          <img src="image/icons8-chipping-50.png" alt="" height="80" width="80" />
-                        </div> -->
-                        <svg class="w-10 h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 216 256"
-                          style="enable-background:new 0 0 216 256;" xml:space="preserve">
-                          <path d="M117.2,102.9c-4.6,11-17.2,16.1-28.2,11.5c-11-4.6-16.1-17.2-11.5-28.2c4.6-11,17.2-16.1,28.2-11.5
-                        	C116.7,79.3,121.8,91.9,117.2,102.9C117.2,102.9,117.2,102.9,117.2,102.9z M213.9,154.6c0,4.3-3.5,7.8-7.8,7.8c0,0,0,0,0,0h-12.7
-                        	v26.8c0,20.8-16.9,37.7-37.7,37.7c0,0,0,0,0,0h-15V254h-102v-81.1C-2.8,140.2-10,80.1,22.6,38.5C40.7,15.5,68.4,2,97.7,2
-                        	c43.4,0,83.4,32.6,91.7,68.4c1.9,8,4,28.8,4,28.8l19.9,52.4C213.7,152.5,213.9,153.5,213.9,154.6L213.9,154.6z M138.2,87.8l12.2-7.6
-                        	l-5.1-12.5l-14.1,3.2c-2.7-3.8-6-7.2-9.8-9.9l3.3-14l-12.5-5.2l-7.7,12.2c-4.6-0.8-9.4-0.8-14-0.1L83,41.5l-12.6,5.1l3.2,14
-                        	c-3.8,2.7-7.2,6-9.9,9.8l-14-3.3l-5.3,12.5l12.2,7.7c-0.8,4.6-0.8,9.4-0.1,14L44.3,109l5.1,12.5l14-3.2c2.7,3.8,6,7.2,9.8,9.9
-                        	l-3.3,14l12.5,5.2l7.7-12.2c4.6,0.8,9.4,0.8,14,0.1l7.6,12.2l12.5-5.1l-3.2-14.1c3.8-2.7,7.2-6,9.9-9.8l14,3.3l5.2-12.5l-12.2-7.7
-                        	C139,97.1,139,92.4,138.2,87.8z" />
-                        </svg>
-                        <div class="ml-3 w-[80%]">
-                          <p class="text-sm font-semibold capitalize">
-                            We automate your business processes & operations
-                          </p>
-                          <p class="text-xs pt-2 text-gray_600">
-                            Using power of Software robots, we know how to
-                            transform client’s business digitally & bring more
-                            productivity & efficiency in their journey towards
-                            consistent growth. We believe in Intelligent
-                            automation as a service for companies of all
-                            sizes.
-                          </p>
-                        </div>
-                      </a>
-
-                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline w-full"
-                        href="src/navbar/itassets.html">
-                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                          <img src="image/icons8-security-shield-green-50.png" height="60" width="60" />
-                        </div> -->
-                        <svg class="w-10 h-10" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 59.982 59.982"
-                          style="enable-background:new 0 0 59.982 59.982;" xml:space="preserve">
-                          <g>
+                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline"
+                        href="src/navbar/financal.html">
+                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3">
+                                                      <img src="image/icons8-laptop-coding-50.png" alt="" height="140" width="140" />
+                                                    </div> -->
+                        <svg class="w-40 h-24" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier">
                             <path
-                              d="M51.991,7.982c-14.628,0-21.169-7.566-21.232-7.64c-0.38-0.456-1.156-0.456-1.536,0c-0.064,0.076-6.537,7.64-21.232,7.64
-                        		c-0.552,0-1,0.448-1,1v19.085c0,10.433,4.69,20.348,12.546,26.521c3.167,2.489,6.588,4.29,10.169,5.352
-                        		c0.093,0.028,0.189,0.042,0.285,0.042s0.191-0.014,0.285-0.042c3.581-1.063,7.002-2.863,10.169-5.352
-                        		c7.856-6.174,12.546-16.088,12.546-26.521V8.982C52.991,8.43,52.543,7.982,51.991,7.982z M50.991,28.067
-                        		c0,9.824-4.404,19.151-11.782,24.949c-2.883,2.266-5.983,3.92-9.218,4.921c-3.235-1-6.335-2.655-9.218-4.921
-                        		C13.395,47.219,8.991,37.891,8.991,28.067V9.971c12.242-0.272,18.865-5.497,21-7.545c2.135,2.049,8.758,7.273,21,7.545V28.067z" />
-                            <path d="M29.429,7.986c-3.015,2.049-8.163,4.689-15.564,5.633c-0.5,0.064-0.874,0.489-0.874,0.992v13.457
-                        		c0,8.607,3.833,16.758,10.254,21.804c2.022,1.589,4.169,2.835,6.381,3.703c0.118,0.046,0.241,0.069,0.365,0.069
-                        		s0.248-0.023,0.365-0.069c2.21-0.867,4.358-2.113,6.382-3.703c6.42-5.046,10.253-13.197,10.253-21.804V14.611
-                        		c0-0.503-0.374-0.928-0.874-0.992c-7.401-0.944-12.549-3.584-15.564-5.633C30.214,7.755,29.768,7.755,29.429,7.986z M34.991,24.982
-                        		c0,1.373-0.575,2.683-1.564,3.621l2.534,10.136c0.075,0.299,0.007,0.615-0.182,0.858s-0.48,0.385-0.788,0.385h-10
-                        		c-0.308,0-0.599-0.142-0.788-0.385s-0.257-0.559-0.182-0.858l2.534-10.136c-0.989-0.938-1.564-2.248-1.564-3.621
-                        		c0-2.757,2.243-5,5-5S34.991,22.225,34.991,24.982z" />
+                              d="M12.0001 7C12.5523 7 13.0001 6.55228 13.0001 6C13.0001 5.44772 12.5523 5 12.0001 5C11.4478 5 11.0001 5.44772 11.0001 6C11.0001 6.55228 11.4478 7 12.0001 7Z"
+                              fill="#212121"></path>
+                            <path
+                              d="M12.4311 2.14094C12.1724 1.95929 11.8277 1.95929 11.569 2.14094L2.32023 8.63647C2.05252 8.82448 1.93755 9.16433 2.03615 9.47626C2.13474 9.78818 2.42414 10.0002 2.75127 10.0002H4.00006V18H3.49981C3.16845 18 2.87637 18.2174 2.78132 18.5349L2.0328 21.0349C1.96482 21.2619 2.00816 21.5077 2.14969 21.6979C2.29122 21.888 2.51428 22 2.75129 22H21.2488C21.4857 22 21.7087 21.8881 21.8503 21.6981C21.9918 21.5081 22.0353 21.2624 21.9675 21.0354L21.2209 18.5354C21.126 18.2177 20.8338 18 20.5022 18H19.9998V10.0002H21.2488C21.5759 10.0002 21.8653 9.78818 21.9639 9.47626C22.0625 9.16433 21.9476 8.82448 21.6799 8.63647L12.4311 2.14094ZM6.49513 18H5.50006V10.0002H6.49513V18ZM4.05815 19.5H19.9435L20.2421 20.5H3.75874L4.05815 19.5ZM7.99513 18V10.0002H10.0025V18H7.99513ZM12.4976 18H11.5025V10.0002H12.4976V18ZM16.0047 18H13.9976V10.0002H16.0047V18ZM18.4998 18H17.5047V10.0002H18.4998V18ZM18.8759 8.50022L5.12419 8.50018L12 3.67119L18.8759 8.50022Z"
+                              fill="#212121"></path>
                           </g>
                         </svg>
-                        <div class="ml-3 w-[80%]">
-                          <p class="text-sm font-semibold capitalize">
-                            We know how to protect your IT assets &
-                            infrastructure
-                          </p>
-                          <p class="text-xs pt-2 text-gray_600">
-                            Protect your company assets & resources from evil
-                            eyes & data breaches. We develop 360-degree
-                            cybersecurity solutions & provide ongoing
-                            management to ward off cyber threats.
+                        <div class="mx-4">
+                          <p class="font-semibold capitalize">FINANCIAL INSTITUTIONS</p>
+                          <p class="text-sm pt-2 text-gray_600">
+                            Financial institutions such as banks, insurance companies, and investment firms hold vast
+                            amounts of sensitive
+                            financial data, making them a prime target for cybercriminals. Financial services companies
+                            need
+                            to secure their systems
+                            and data from unauthorized access, theft, and fraud to protect themselves and their
+                            customers.
                           </p>
                         </div>
                       </a>
-                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline w-full"
-                        href="src/navbar/managedservices.html">
-                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                          <img src="image/icons8-security-shield-green-50.png" height="60" width="60" />
-                        </div> -->
-                        <svg class="w-10 h-10" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet"
-                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <title>rack-server-solid-badged</title>
-                          <path class="clr-i-solid--badged clr-i-solid-path-1--badged"
-                            d="M2,14v8H34V14Zm6,5H6V17H8Zm16,0H10V17H24Z"></path>
-                          <path class="clr-i-solid--badged clr-i-solid-path-2--badged"
-                            d="M2,30a2,2,0,0,0,2,2H32a2,2,0,0,0,2-2V24H2Zm8-3H24v2H10ZM6,27H8v2H6Z"></path>
-                          <path class="clr-i-solid--badged clr-i-solid-path-3--badged"
-                            d="M23.13,9H10V7H22.57a7.52,7.52,0,0,1-.07-1,7.49,7.49,0,0,1,.28-2H4A2,2,0,0,0,2,6v6H25.51A7.52,7.52,0,0,1,23.13,9ZM8,9H6V7H8Z">
-                          </path>
-                          <circle class="clr-i-solid--badged clr-i-solid-path-4--badged clr-i-badge" cx="30" cy="6"
-                            r="5">
-                          </circle>
-                          <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+
+                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline"
+                        href="src/navbar/healthcare.html">
+                        <!-- <div class="bg-teal-500 text-white rounded-lg p-3">
+                                                      <img src="image/icons8-chipping-50.png" alt="" height="140" width="140" />
+                                                    </div> -->
+                        <svg class="w-40 h-32" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg"
+                          fill="#000000" stroke="#000000" stroke-width="0.648">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <title>Health</title>
+                            <rect width="24" height="24" fill="none" stroke="#000000" stroke-width="0" opacity="0.01">
+                            </rect>
+                            <path d="M17.5,13.5h-4v4h-3v-4h-4v-3h4v-4h3v4h4ZM12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Z"
+                              transform="translate(0 0)"></path>
+                          </g>
                         </svg>
-                        <div class="ml-3 w-[80%]">
-                          <p class="text-sm font-semibold capitalize">
-                            Brand Managed services
+                        <div class="mx-4">
+                          <p class="font-semibold capitalize">
+                            Healthcare
                           </p>
-                          <p class="text-xs pt-2 text-gray_600">
-                            Service desk tickets & queue management using ServiceNow.
+                          <p class="text-sm pt-2 text-gray_600">
+                            Healthcare industry is increasingly digitized, with electronic health records, online
+                            patient
+                            portals, and medical
+                            devices all connected to the internet. This makes healthcare organizations vulnerable to
+                            cyber-attacks that can
+                            compromise patient data, medical records, and even the safety of patients. Cybersecurity is
+                            crucial to ensuring the
+                            privacy and security of patient information.
                           </p>
                         </div>
                       </a>
+
+                      <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-darkGray focus:text-darkGray hover:bg-lightGray focus:bg-lightGray focus:outline-none focus:shadow-outline"
+                        href="src/navbar/governmenr.html">
+                        <!-- <div class="bg-teal-500 text-black rounded-lg p-3">
+                                                      <img src="image/icons8-security-shield-green-50.png" alt="" height="100" width="100" />
+                                                    </div> -->
+                        <svg class="w-48 h-32" fill="#000000" viewBox="-2 0 19 19" xmlns="http://www.w3.org/2000/svg"
+                          class="cf-icon-svg">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M14.427 14.75v.491H.573v-.49a.476.476 0 0 1 .475-.476h.411a.497.497 0 0 1-.002-.048v-.443a.476.476 0 0 1 .475-.475h.41V9.692h-.307a.554.554 0 1 1 0-1.108h10.963a.554.554 0 1 1 0 1.108h-.292v3.617h.362a.476.476 0 0 1 .475.475v.443a.364.364 0 0 1-.003.048h.412a.476.476 0 0 1 .475.475zm-1.72-7.043a5.182 5.182 0 1 0-10.364 0zm-9.188 5.602h1.109v-3.062a.554.554 0 1 0-1.109 0zm2.294-3.053v3.053h1.109v-3.053a.554.554 0 1 0-1.109 0zm2.294.008v3.045h1.109v-3.045a.554.554 0 1 0-1.109 0zm2.294.008v3.037h1.109v-3.037a.554.554 0 0 0-1.109 0z">
+                            </path>
+                          </g>
+                        </svg>
+                        <div class="mx-4">
+                          <p class="font-semibold capitalize">
+                            GOVERNMENT
+                          </p>
+                          <p class="text-sm pt-2 text-gray_600">
+                            Government agencies at all levels, from local to federal, handle sensitive data and
+                            information
+                            critical to national
+                            security. Cyber-attacks on government networks can result in data breaches, intellectual
+                            property theft, and the
+                            disruption of essential services. As such, government agencies need robust cybersecurity
+                            measures to protect against
+                            cyber threats.
+                          </p>
+                        </div>
+                      </a>
+
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-
-          <li class="border-b-[1px] border-gray_600">
-            <div class="px-4 py-2 font-semibold text-primaryColor faq">
-              <a href="#"><span class="font-semibold uppercase text-[14px]">Who We Help</span></a>
             </div>
           </li>
           <li>
@@ -1088,7 +1297,7 @@
 
   <!--================== Testimonial ==================-->
   <section id="testimonial"
-    class="flex justify-center items-center h-auto md:h-[80vh] w-screen bg-white pt-6 md:pt-48 md:pb-16">
+    class="flex justify-center items-center h-auto md:h-[80vh] w-screen bg-white pt-6 md:pt-64 lg:mt-4 lg:mb-28 md:pb-16">
     <div class="w-[90vw] md:px-12 mx-auto bg-white">
       <div class="flex flex-col items-center pt-16">
         <h2 class="text-center text-2xl md:text-3xl  font-bold uppercase">
@@ -1110,9 +1319,6 @@
                 </div>
 
                 <div class="card-content flex flex-col items-center py-2.5 px-3.5">
-                  <h2 class="name text-lg font-medium">Nishant Sharma</h2>
-                  <h2 class="name text-base font-medium">CEO of Metabriks Consulting,</h2>
-                  <center>Australia</center>
                   <p class="description text-sm text-gray_600 text-start">
                     As a customer of NexGen Enablers, I can say that their new website is a huge improvement over the
                     old one. I'm also
@@ -1120,6 +1326,8 @@
                     what I'm looking for.
                     They helped us transform digitally. Great job, NGE!
                   </p>
+                  <h2 class="name text-lg font-medium">Nishant Sharma</h2>
+                  <h2 class="name text-sm font-medium">CEO of Metabriks Consulting,Australia</h2>
                 </div>
               </div>
               <div class="card swiper-slide rounded-3xl bg-white border border-[#dee2e6]">
@@ -1132,9 +1340,6 @@
                 </div>
 
                 <div class="card-content flex flex-col items-center py-2.5 px-3.5">
-                  <h2 class="name text-lg font-medium">Z. Marafie</h2>
-                  <h2 class="name text-base font-medium">CEO of Smart Verse Tech,</h2>
-                  <center>Kuwait</center>
                   <p class="description text-sm text-gray_600 text-center">
                     Working with the team at NexGen Enablers was an absolute pleasure. They took the time to understand
                     our brand and our
@@ -1143,6 +1348,8 @@
                     site that we're proud to share with our customers. Thank you for all your strategic consultations to
                     help us grow!
                   </p>
+                  <h2 class="name text-sm font-medium">Z. Marafie</h2>
+                  <h2 class="name text-sm font-medium">CEO of Smart Verse Tech, Kuwait</h2>
                 </div>
               </div>
               <div class="card swiper-slide rounded-3xl bg-white border border-[#dee2e6]">
@@ -1155,9 +1362,6 @@
                 </div>
 
                 <div class="card-content flex flex-col items-center py-2.5 px-3.5">
-                  <h2 class="name text-lg font-medium">Saire Ayub</h2>
-                  <h2 class="name text-base font-medium">RIS Securities</h2>
-                  <center>England</center>
                   <p class="description text-sm text-gray_600 text-center">
                     Team @ NexGen is quite professional & experienced, they understood our business requirements &
                     accordingly planned
@@ -1165,6 +1369,8 @@
                     in our successful
                     journey, definitely recommend their branding services
                   </p>
+                  <h2 class="name text-sm font-medium">Saire Ayub</h2>
+                  <h2 class="name text-sm font-medium">RIS Securities, England</h2>
                 </div>
               </div>
               <div class="card swiper-slide rounded-3xl bg-white border border-[#dee2e6]">
@@ -1177,9 +1383,6 @@
                 </div>
 
                 <div class="card-content flex flex-col items-center py-2.5 px-3.5">
-                  <h2 class="name text-lg font-medium">I Rahman</h2>
-                  <h2 class="name text-base font-medium">CEO of Techathon</h2>
-                  <center>Amsterdam</center>
                   <p class="description text-sm text-gray_600 text-center">
                     Our old website was slow & outdated, and as a result we were losing potential customers. The team @
                     NGE came in &
@@ -1187,6 +1390,8 @@
                     well in search engines.
                     We have a great experience & learning with them. Must recommend their services.
                   </p>
+                  <h2 class="name text-lg font-medium">I Rahman</h2>
+                  <h2 class="name text-base font-medium">CEO of Techathon, Amsterdam</h2>
                 </div>
               </div>
             </div>
@@ -1207,7 +1412,7 @@
       </h2>
       <div class="text-center w-32 border-solid border-b-4 border-secondaryColor pt-3 h-1"></div>
     </div>
-    <h2 class="text-center text-2xl px-10 text-primaryColor font-bold pt-2 md:pt-10 uppercase">
+    <h2 class="text-center text-lg px-16 text-primaryColor font-bold pt-2 md:pt-10">
       Bank upon Us & outsource for below key roles & responsibilities. We’re more than happy to shoulder upon these
       tasks at
       much affordable cost you never expected.
@@ -1634,11 +1839,11 @@
       </div>
 
       <div>
-        <a href="src/blog/blog2.html">
+        <a href="/src/blog/blog2.html">
 
           <h4 class="text-secondaryColor font-medium pt-2">Blog 2</h4>
           <div class="overflow-hidden mt-2">
-            <img src="image/socialmedia.png" alt="blog image"
+            <img src="/image/socialmedia.png" alt="blog image"
               class="hover:scale-110 transition duration-300 ease-out h-40 w-full" />
           </div>
           <p class="leading-4 font-extralight text-sm text-white pt-3">
@@ -1704,28 +1909,28 @@
       <div class="flex flex-col w-full">
         <h2 class="mb-4 text-sm uppercase">Our Competenties</h2>
         <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
-          href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-3 h-3">
+          href="/src/navbar/buildbrand.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
           <span>Web Development</span>
         </a>
         <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
-          href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-3 h-3">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
           <span>Digital Marketing</span>
         </a>
         <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
-          href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-3 h-3">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
           <span>IT Supports Services</span>
         </a>
         <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
-          href="src/navbar/automation.html">
+          href="#">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-3 h-3">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -1733,7 +1938,7 @@
           <span>Automation Services</span>
         </a>
         <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
-          href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-3 h-3">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
@@ -1773,7 +1978,7 @@
           </svg>
           <span>Career</span></a>
         <a class="flex hover:text-secondaryColor items-center border-b border-solid border-white py-2 text-xs md:text-base"
-          href="#case-studies"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          href="src/success.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
@@ -1791,7 +1996,7 @@
           <p class="w-1/2 text-xs md:text-sm">
             US OFFICE
           </p>
-          <p class="w-1/2 text-xs pt-2 md:text-sm">
+          <p class="w-2/3 text-xs pt-2 md:text-sm">
             US Head office: 1367 Thornborough Dr
             Alpharetta, Georgia, GA 30004
 
@@ -1799,7 +2004,7 @@
         </div>
         <div>
           <h2 class="py-5 text-sm mt-5 md:mt-10">AU OFFICE</h2>
-          <p class="w-1/2 text-xs md:text-sm">
+          <p class="w-2/3 text-xs md:text-sm">
             4 Purri Close, Greensborough, VIC 3088, Australia
           </p>
         </div>
@@ -1807,19 +2012,19 @@
       <div class="flex flex-col w-full">
         <div>
           <h2 class="mb-4 mt-12 md:mt-0 text-sm">UK OFFICE</h2>
-          <p class="w-1/2 text-xs md:text-sm">
+          <p class="w-2/3 text-xs md:text-sm">
             UK Office: 25 Glan Rhymni, Cardiff, CF242TW
           </p>
         </div>
         <div class="mb-8">
           <h2 class="py-5 text-sm mt-5 md:mt-10">EU OFFICE</h2>
-          <p class="w-1/2 text-xs md:text-sm">
+          <p class="w-2/3 text-xs md:text-sm">
             EU Office: Donaudreef 50, 3561 EN Utrecht, Netherlands
           </p>
         </div>
         <div class="absolute md:static top-[16px] right-[14px] flex justify-center w-20 h-20 bg-white rounded-full">
-          <a href="index.html">
-            <img src="image/logo1.jpg" alt="logo" class="w" />
+          <a href="/index.html">
+            <img src="/image/logo1.jpg" alt="logo" class="w" />
           </a>
         </div>
       </div>
