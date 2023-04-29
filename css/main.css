@@ -40,7 +40,7 @@ header.black .consultation-btn {
 header.black button span,
 header.black ul .faq span {
   font-size: 14px;
-  transition: all 1s ease-in-out;
+  /* transition: all 1s ease-in-out; */
 }
 
 header.black ul li a.coolBeans {
