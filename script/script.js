@@ -86,6 +86,7 @@ $(window).on("scroll", function () {
 document.addEventListener("DOMContentLoaded", function () {
   var navItem1 = document.querySelector(".nav-item1");
   var navItem2 = document.querySelector(".nav-item2");
+  var navItem3 = document.querySelector(".nav-item3");
   var nav = document.querySelector(".nav");
 
   navItem1.addEventListener("mouseenter", function (e) {
@@ -94,10 +95,17 @@ document.addEventListener("DOMContentLoaded", function () {
   navItem2.addEventListener("mouseenter", function (e) {
     nav.classList.add("nav-bg-white");
   });
+  navItem3.addEventListener("mouseenter", function (e) {
+    nav.classList.add("nav-bg-white");
+  });
   navItem1.addEventListener("mouseleave", function () {
     nav.classList.remove("nav-bg-white");
   });
   navItem2.addEventListener("mouseleave", function () {
     nav.classList.remove("nav-bg-white");
   });
+  navItem3.addEventListener("mouseleave", function () {
+    nav.classList.remove("nav-bg-white");
+  });
+  
 });
